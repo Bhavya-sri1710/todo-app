@@ -1,38 +1,54 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-input {
+  margin: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-input input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  margin: 10px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.task-list button {
+  background: #ff4d4d;
   color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list button:hover {
+  background: #ff1a1a;
 }
